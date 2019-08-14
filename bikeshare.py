@@ -312,7 +312,7 @@ def main():
         process_stat(x, df)
 
     # Restarting option
-    restart = input("\n * Would you like to restart? Type \'yes\' or \'no\'.\n")
+    restart = input("\n * Would you like to do it again? Type \'yes\' or \'no\'.\n")
     if restart.upper() == 'YES' or restart.upper() == "Y":
         main()
 
