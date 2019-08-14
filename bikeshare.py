@@ -1,14 +1,12 @@
-#!/usr/bin/env python3
-
 import time
 import pandas as pd
 import numpy as np
 
 # loading files
 CITY_DATA = {
-    'chicago':'/Users/leonellm/Documents/Udacity/version-control/chicago.csv',
-    'new york city':'/Users/leonellm/Documents/Udacity/version-control/new_york_city.csv',
-    'washington':'/Users/leonellm/Documents/Udacity/version-control/washington.csv'
+    'chicago':'/Users/leonellm/Documents/Udacity/version-control/pdsnd_github/chicago.csv',
+    'new york city':'/Users/leonellm/Documents/Udacity/version-control/pdsnd_github/new_york_city.csv',
+    'washington':'/Users/leonellm/Documents/Udacity/version-control/pdsnd_github/washington.csv'
 }
 
 def get_city():
