@@ -44,7 +44,7 @@ def get_time_filter():
     This function asks the user to choose between month and day of month,
     day of the week or no filters at all
     '''
-    time_filter = input('\nDo you want to filter the data by "month" and day of the month, or "day" of the week, or you do not want to filter at all? Type "no" for no time_filter filter.\n')
+    time_filter = input('\nDo you want to filter the data by "month" and day of the month, or "day" of the week, or you do not want to filter at all? Type "no" for no filter.\n')
     time_filter = time_filter.lower()
 
     while True:
