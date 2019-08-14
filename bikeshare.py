@@ -177,7 +177,7 @@ def most_common_month(df):
     popular_month = months[m - 1].capitalize()
     return popular_month
 
-def most_common_day(df):
+def most_common_day_week(df):
     '''What is the most common day of week for start time?
     '''
     # df - dataframe returned from time_filters
@@ -304,7 +304,7 @@ def main():
 
     # all the conclusions
     stats_funcs_list = [most_common_month,
-     most_common_day, most_common_start_hour,
+     most_common_day_week, most_common_start_hour,
      ride_duration_avg_total, most_common_trip,
      most_common_station, count_user_type, user_birthyears, count_user_gender]
 
