@@ -42,7 +42,7 @@ def get_time_filter():
     This function asks the user to choose between month and day of month,
     day of the week or no filters at all
     '''
-    time_filter = input('\nDo you want to filter the data by "month" and day of the month, or "day" of the week, or you do not want to filter at all? Type "no" for no time_filter filter.\n')
+    time_filter = input('\nDo you want to filter the data by "month" and day of the month, or "day" of the week, or you do not want to filter at all? Type "no" for no filter.\n')
     time_filter = time_filter.lower()
 
     while True:
@@ -175,7 +175,7 @@ def most_common_month(df):
     popular_month = months[m - 1].capitalize()
     return popular_month
 
-def most_common_day(df):
+def most_common_day_week(df):
     '''What is the most common day of week for start time?
     '''
     # df - dataframe returned from time_filters
@@ -302,7 +302,7 @@ def main():
 
     # all the conclusions
     stats_funcs_list = [most_common_month,
-     most_common_day, most_common_start_hour,
+     most_common_day_week, most_common_start_hour,
      ride_duration_avg_total, most_common_trip,
      most_common_station, count_user_type, user_birthyears, count_user_gender]
 
@@ -310,7 +310,7 @@ def main():
         process_stat(x, df)
 
     # Restarting option
-    restart = input("\n * Would you like to restart? Type \'yes\' or \'no\'.\n")
+    restart = input("\n * Would you like to do it again? Type \'yes\' or \'no\'.\n")
     if restart.upper() == 'YES' or restart.upper() == "Y":
         main()
 
